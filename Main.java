@@ -6,17 +6,16 @@ public class Main {
 
         //Prints Monkey or Cat first!!!
 
-        Monkey monkey = new Monkey();
-        //monkey.run();
+       Monkey monkey = new Monkey();
+        //monkey.PrintMonkey();
 
         Cat cat = new Cat();
-        //cat.run();
+        //cat.PrintCat();
 
         Thread thread = new Thread(monkey);
         thread.start();
 
-        Thread thread2 = new Thread(cat);
-        thread2.start();
-
+        Thread thread_2 = new Thread(cat);
+        thread_2.start();
     }
 }
